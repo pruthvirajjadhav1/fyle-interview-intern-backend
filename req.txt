@@ -1,0 +1,6 @@
+curl -d '{"content": "some text"}' -H "Content-Type: application/json" -H 'X-Principal: {"user_id":1, "student_id":1}' -X POST http://0.0.0.0:7755/student/assignments
+
+curl --header 'X-Principal: {"user_id":1, "student_id":1}' http://0.0.0.0:7755/student/assignments
+
+
+curl --header 'X-Principal: {"user_id":3, "teacher_id":1}' http://0.0.0.0:7755/teacher/assignments
